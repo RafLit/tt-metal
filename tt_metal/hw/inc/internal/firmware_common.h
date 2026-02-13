@@ -6,13 +6,15 @@
 
 #include <cstdint>
 #include "core_config.h"
+#ifndef ARCH_QUASAR
 #include "ckernel_globals.h"
+#endif
 #include "internal/tensix_functions.h"
 #include "internal/risc_attribs.h"
 #include "api/compile_time_args.h"
 #include "dev_mem_map.h"
 #include "hostdevcommon/kernel_structs.h"
-#include "hostdevcommon/common_values.hpp"
+#include "hostdev/rta_constants.h"
 #include "hostdev/dev_msgs.h"
 #include "noc/noc_parameters.h"
 #include "api/debug/dprint.h"
